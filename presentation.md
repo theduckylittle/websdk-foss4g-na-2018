@@ -34,7 +34,7 @@ class MyComponent extends React.Component {
 ## Why React is cool
 
 - It takes a lot of DOM out of the equation.
-- Components all have a defineable life-cycle.
+- Components all have a definable life-cycle.
 - You can compose components together
 
 ```
@@ -91,7 +91,7 @@ class MyOtherComponent extends React.Component {
 
 - React-Redux is a library that will stimulate the 
   React.Component life-cycle when the state is changed
-  in a redux store.
+  in a Redux store.
   
 ## A Traffic Light Component
 
@@ -132,15 +132,15 @@ From Mapbox:
 
 ## Now we have a data model!
 
-- Anything that can be represented in JSON can be represented by redux. 
-- This was really the last peice of the puzzle.
+- Anything that can be represented in JSON can be represented by Redux. 
+- This was really the last piece of the puzzle.
  
 ## What does the SDK provide?
  
 - Reducers and Actions that are based on the Mapbox GL Style spec
 - Components to render the style spec including:
   - A basic layers catalog
-  - Popups
+  - Pop-ups
   - Navigation elements (Zoom controls, etc.)
   - The map!
 
@@ -153,7 +153,7 @@ From Mapbox:
 
 We're going to need some stuff.
 
-- We need modern javascript, I <3 [NVM](https://github.com/creationix/nvm).
+- We need modern JavaScript, I <3 [NVM](https://github.com/creationix/nvm).
   Most Distributions have very old Node versions.  Use Node source or nvm
   to install NodeJS 8.1 or newer.
 - Ensure that `npx` and `npm` are up to date:
