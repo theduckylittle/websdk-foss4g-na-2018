@@ -320,5 +320,5 @@ Now we can open index.html in the browser!
 - We are open and on GitHub:
   - https://github.com/boundlessgeo/sdk
 - Code seen in this presentation can be found here:
-  - 
+  - https://github.com/theduckylittle/websdk-foss4g-na-2018
 
