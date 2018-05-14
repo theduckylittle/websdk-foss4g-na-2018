@@ -1,4 +1,4 @@
-# FOSS4G-NA 2018 Presentation
+# WebSDK 2018 Presentation
 
 by: Dan 'Ducky' Little
 
