@@ -10,7 +10,7 @@ Dan "Ducky" Little
 ## What is this?
 
 - A gentle introduction to mapping with ES6, React, Redux, Babel and Webpack!
-- The Boundless SDK is a React+Redux FIRST based mapping library.
+- The Boundless SDK is a Redux-driven based mapping library.
 - Can use OpenLayers and Mapbox GL as map renderers.
 
 
@@ -45,7 +45,7 @@ class MyOtherComponent extends React.Component {
         <TitleComponent title="Woohoo!" />
         <ListComponent items={this.props.items} />
       </div>
-    }
+    );
   }
 }
 ```
@@ -77,6 +77,7 @@ class MyOtherComponent extends React.Component {
     if (action.type === LIGHT.CHANGE) {
       return {light: action.color};
     }
+    return state;
   }
   ```
 
