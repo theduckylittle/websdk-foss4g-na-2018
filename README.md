@@ -17,3 +17,4 @@ ES6 SDK for making maps.
  - Presentation can be found [here](./presentation.md)
  - Code can be found in [the demo](./demo)
 
+ - Checkout the [Boundless WebSDK!](https://github.com/boundlessgeo/sdk)
