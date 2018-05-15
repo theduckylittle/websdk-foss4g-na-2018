@@ -18,3 +18,4 @@ ES6 SDK for making maps.
  - Code can be found in [the demo](./demo)
 
  - Checkout the [Boundless WebSDK!](https://github.com/boundlessgeo/sdk)
+ - Sample GeoJSON is based on the data from the [US Census QWI Explorer](https://qwiexplorer.ces.census.gov/static/explore.html)

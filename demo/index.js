@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 
 import SdkMap from '@boundlessgeo/sdk/components/map';
 import SdkMapReducer from '@boundlessgeo/sdk/reducers/map';
-import { addOsmSource, addLayer } from '@boundlessgeo/sdk/actions/map';
+import { addSource, addOsmSource, addLayer } from '@boundlessgeo/sdk/actions/map';
 
 const store = createStore(combineReducers({
   map: SdkMapReducer,
@@ -17,6 +17,21 @@ class App extends React.Component {
     store.dispatch(addLayer({
       id: 'osm',
       source: 'osm',
+    }));
+
+    store.dispatch(addSource('counties', {
+      type: 'geojson',
+      data: './mo_counties.geojson',
+    }));
+
+    store.dispatch(addLayer({
+      id: 'counties',
+      source: 'counties',
+      type: 'line',
+      paint: {
+        'line-width': 2,
+        'line-color': '#000000',
+      },
     }));
   }
   render() {

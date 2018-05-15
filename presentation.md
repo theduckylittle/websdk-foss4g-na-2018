@@ -313,6 +313,56 @@ npx webpack --config ./webpack.config.js
 
 Now we can open index.html in the browser!
 
+## Adding your own data
+
+This will add a GeoJSON source to the map and style it into
+a borders layer.
+
+```
+    store.dispatch(addSource('counties', {
+      type: 'geojson',
+      data: './mo_counties.geojson',
+    }));
+
+    store.dispatch(addLayer({
+      id: 'counties',
+      source: 'counties',
+      type: 'line',
+      paint: {
+        'line-width': 2,
+        'line-color': '#000000',
+      },
+    }));
+
+```
+
+## Complete looking componentDidMount
+
+```
+componentDidMount() {
+    store.dispatch(addOsmSource('osm'));
+    store.dispatch(addLayer({
+      id: 'osm',
+      source: 'osm',
+    }));
+
+    store.dispatch(addSource('counties', {
+      type: 'geojson',
+      data: './mo_counties.geojson',
+    }));
+
+    store.dispatch(addLayer({
+      id: 'counties',
+      source: 'counties',
+      type: 'line',
+      paint: {
+        'line-width': 2,
+        'line-color': '#000000',
+      },
+    }));
+}
+```
+
 ## More resources
 
 - Checkout the SDK home page:
@@ -320,6 +370,7 @@ Now we can open index.html in the browser!
   - Many examples!
 - We are open and on GitHub:
   - https://github.com/boundlessgeo/sdk
+- Mapbox Style Specification
+  - https://www.mapbox.com/mapbox-gl-js/style-spec/
 - Code seen in this presentation can be found here:
   - https://github.com/theduckylittle/websdk-foss4g-na-2018
-
